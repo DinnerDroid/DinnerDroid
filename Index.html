@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dinner Droid - Food Engeneering</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="Images/B&WDDLogo.png">
+</head>
+<body>
+  <!-- Sticky Header -->
+  <header class="sticky-header">
+    <div class="logo">Dinner Droid</div>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#store">Store</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Home Section -->
+  <section id="home" class="home-section">
+    <div class="gradient-overlay"></div>
+    <div class="home-text animate__animated animate__fadeInLeft">
+      <h1>Precision Machined Parts</h1>
+      <p>At Dinner Droid we make food things. Like Grilled Cheese Making Machine.</p>
+      <a href="#store" class="btn">Explore Our Products</a>
+    </div>
+    <div class="home-image animate__animated animate__fadeInRight">
+      <img src="Images/Bread.jpg" alt="Precision Machined Part">
+    </div>
+  </section>
+
+  <!-- Store Section -->
+  <section id="store" class="store-section">
+    <h2 class="animate__animated animate__fadeIn">Our Products</h2>
+    <div class="product-grid">
+      <div class="product-card animate__animated animate__fadeInUp">
+        <img src="Images/Grilled-Cheese-ChelseasMessyApron-1200-1-500x500.webp" alt="Product 1">
+        <h3>Product 1</h3>
+        <p>$99.99</p>
+        <button onclick="showProductInfo('Product 1', '$99.99', 'Description of Product 1.')">View Details</button>
+      </div>
+      <div class="product-card animate__animated animate__fadeInUp animate__delay-1s">
+        <img src="Images/gears.png" alt="Product 2">
+        <h3>Product 2</h3>
+        <p>$99.99</p>
+        <button onclick="showProductInfo('Product 2', '$99.99', 'Description of Product 2.')">View Details</button>
+      </div>
+      <!-- Add more products here -->
+    </div>
+  </section>
+
+  <!-- Product Info Modal -->
+  <div id="productModal" class="modal">
+    <div class="modal-content animate__animated animate__fadeIn">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h2 id="modalTitle"></h2>
+      <p id="modalPrice"></p>
+      <p id="modalDescription"></p>
+      <a id="modalLink" href="#" target="_blank" class="btn">Buy on Amazon</a>
+    </div>
+  </div>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section">
+    <h2 class="animate__animated animate__fadeIn">Connect With Us</h2>
+    <div class="social-links animate__animated animate__fadeIn">
+      <a href="https://www.youtube.com/@DinnerDroid" target="_blank">YouTube</a>
+      <a href="https://www.instagram.com/dinnerdroid/" target="_blank">Instagram</a>
+    </div>
+    <div class="qr-code animate__animated animate__fadeIn">
+      <img src="Images/dinnerdroid_qr (1).png" alt="QR Code">
+      <p>Scan to visit our store</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2023 Mylan Machine. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
